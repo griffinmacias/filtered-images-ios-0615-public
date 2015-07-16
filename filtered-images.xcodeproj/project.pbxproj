@@ -23,6 +23,7 @@
 		D833EFB1197FE7CE00E99358 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D833EFAF197FE7CE00E99358 /* InfoPlist.strings */; };
 		D833EFB3197FE7CE00E99358 /* filtered_imagesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D833EFB2197FE7CE00E99358 /* filtered_imagesTests.m */; };
 		D833EFBD197FE82800E99358 /* Mickey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D833EFBC197FE82800E99358 /* Mickey.jpg */; };
+		DB4B2C611B5844E1008B3E46 /* libPods-filtered-images-MBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4B2C601B5844E1008B3E46 /* libPods-filtered-images-MBProgressHUD.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		D833EFB0197FE7CE00E99358 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D833EFB2197FE7CE00E99358 /* filtered_imagesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = filtered_imagesTests.m; sourceTree = "<group>"; };
 		D833EFBC197FE82800E99358 /* Mickey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mickey.jpg; sourceTree = "<group>"; };
+		DB4B2C601B5844E1008B3E46 /* libPods-filtered-images-MBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-filtered-images-MBProgressHUD.a"; path = "Pods/../build/Debug-iphoneos/libPods-filtered-images-MBProgressHUD.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB4B2C611B5844E1008B3E46 /* libPods-filtered-images-MBProgressHUD.a in Frameworks */,
 				D833EF8A197FE7CE00E99358 /* CoreGraphics.framework in Frameworks */,
 				D833EF8C197FE7CE00E99358 /* UIKit.framework in Frameworks */,
 				D833EF88197FE7CE00E99358 /* Foundation.framework in Frameworks */,
@@ -120,6 +123,7 @@
 		D833EF86197FE7CE00E99358 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB4B2C601B5844E1008B3E46 /* libPods-filtered-images-MBProgressHUD.a */,
 				D833EF87197FE7CE00E99358 /* Foundation.framework */,
 				D833EF89197FE7CE00E99358 /* CoreGraphics.framework */,
 				D833EF8B197FE7CE00E99358 /* UIKit.framework */,
@@ -450,6 +454,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "filtered-images/filtered-images-Prefix.pch";
 				INFOPLIST_FILE = "filtered-images/filtered-images-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -464,6 +472,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "filtered-images/filtered-images-Prefix.pch";
 				INFOPLIST_FILE = "filtered-images/filtered-images-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
